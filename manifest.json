@@ -2,7 +2,7 @@
     "name": "Regis Coins",
     "description": "Replaces images with photos of regis and accumulates coins!",
     "version": "1.0",
-    "manifest_version": 3,
+    "manifest_version": 2,
     "content_scripts": [
         {
         "matches": ["<all_urls>"],
