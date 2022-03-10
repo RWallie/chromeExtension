@@ -1,26 +1,44 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  width: 300px;
-  background: rgb(253, 253, 253);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: rgb(253, 253, 253);
 }
 
 .mainContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 5px solid grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid grey;
+    width: 300px;
 }
 
 .titleContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .titleContainer img {
-  width: 100px;
-  height: auto;
+    width: 100px;
+    height: auto;
+    
+}
+
+.totalPhotos {
+    display: flex;
+    align-items:  center;
+    justify-content: space-around;
+}
+
+.regisCoins {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-right: 10px;
 }

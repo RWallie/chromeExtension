@@ -13,10 +13,6 @@ const pageImages = document.getElementsByTagName('img');
 // create a sum to store the total Regis Coins earned
 // sum will be calculated by adding each photos width
 
-const webImgCount = pageImages.length;
-
-console.log(pageImages[0].clientWidth);
-
 // iterate through the length of how many images are on the current page
 for (let i = 0; i < pageImages.length; i++) {
   // generate one of the photos from regisArray randomly
@@ -25,12 +21,25 @@ for (let i = 0; i < pageImages.length; i++) {
   pageImages[i].src = regisArray[regisPhoto];
 }
 
-// Bark when click
-var box = document.querySelector('.box');
+// change the values elements with id: photoSwap and coinsTotal
+photosChanged = document.getElementById('photoSwap');
+console.log(photosChanged);
 
-var audioUrl = 'https://freewavesamples.com/files/Dog-Bark.wav';
+// photosChanged.innerText = pageImages.length;
+
+// Get PhotoWidth
+console.log(pageImages[0].clientWidth);
+
+// Bark when click
+
+const audioUrl = 'https://freewavesamples.com/files/Dog-Bark.wav';
 
 // Detect all click events on the document
 document.addEventListener('click', function (event) {
   new Audio(audioUrl).play();
 });
+
+// Detect all keys fire
+// document.addEventListener('keyup', function (event) {
+//   new Audio(audioUrl).play();
+// });
