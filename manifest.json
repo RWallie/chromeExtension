@@ -1,20 +1,20 @@
 {
-    "name": "Regis Coins",
-    "description": "Replaces images with photos of regis and accumulates coins!",
-    "version": "1.0",
-    "manifest_version": 2,
-    "content_scripts": [
-        {
-        "matches": ["<all_urls>"],
-        "js": ["Content.js"]
-        }
-    ],
-    "browser_action": {
-        "default_icon": "regisIcon.png",
-        "default_popup": "popup.html",
-        "default_title": "Regis Coins"
-    },
-    "permissions": [
-        "activeTab"
-    ]
-  }
+  "name": "Regis Coins",
+  "description": "Replaces images with photos of regis and accumulates coins!",
+  "version": "1.4",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "matches": ["<all_urls>"],
+      "js": ["draft.js"],
+      "all_frames": true
+    }
+  ],
+  "browser_action": {
+    "default_icon": "regisIcon.png",
+    "default_popup": "popup.html",
+    "default_title": "Regis Coins"
+  },
+  "permissions": ["storage", "activeTab", "tabs", "<all_urls>"]
+}
